@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Gaming{
+public static void main(String[] args){
+   Scanner scanner = new Scanner(System.in);
+
+int numberToGuess = 15, maxAttempts = 5, attempts = 0;
+
+System.out.println("Welcome to the Number Guessing Game!\nTry to guess the number between 0 and 20.");
+
+while(attempts < maxAttempts) {
+System.out.print("Enter your guess: ");
+int userGuess = scanner.nextInt();
+
+if (userGuess == numberToGuess){
+System.out.println("Congratulations! You have won!");
+break; 
+    }else{
+        System.out.println("Incorrect guess.Try again.");
+
+       if (++attempts < maxAttempts){
+         System.out.println("You have " + (maxAttempts - attempts) + " attempts remaining.\n");
+       }else{
+           System.out.println("Sorry,you've run out of attempts.The correct number was: " + numberToGuess);
+         }
+      }
+   }
+ }
+}
