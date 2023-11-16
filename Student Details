@@ -1,0 +1,10 @@
+public class MyDetails{
+public static void main(String[]args){
+System.out.println("COURSE:Diploma In Information Technology");
+System.out.println("NAME:Joel Maina");
+System.out.println("REG NO:22/04401");
+System.out.println("DOB:21/10/2003");
+System.out.println("VISION:Networker");
+System.out.println("FAVOURITE PROGRAMMING LANGUAGE:Java");
+}
+}
